@@ -1,0 +1,86 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./backg.jpg'); /* Adjust the path to your background image */
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: white;
+  height: 100vh; /* Ensure full viewport height */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.header-content {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  align-items: flex-start; /* Align content to the top */
+  padding-right: 20px; /* Adjust right padding for space */
+  padding-top: 10%; /* Adjust top padding for positioning */
+}
+
+.header-text {
+  max-width: 50%; /* Limit text width for readability */
+margin-bottom: 600px;/* Align text to the right */
+margin-right: 100px;
+}
+
+.header-text h1 {
+  font-size: 4rem; /* Adjust font size for big text */
+  margin-bottom: 20px; /* Add spacing between elements */
+  animation: fadeIn 2s ease; /* Example animation for fading in */
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.p1 {
+ 
+  font-size: 1.2rem; /* Adjust font size for emphasis */
+}
+
+
+.down {
+  font-size: 2rem; /* Adjust font size for emphasis */
+  margin-top: 20px; /* Add space above */
+  animation: slideIn 2s ease; /* Example animation for sliding in */
+}
+
+@keyframes slideIn {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    justify-content: center; /* Center content horizontally on smaller screens */
+    align-items: center; /* Center content vertically on smaller screens */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .header-text {
+    max-width: 100%; /* Adjust max width for smaller screens */
+    margin-top: 300px;
+    text-align: right;
+    margin-right: -70px; /* Center align text on smaller screens */
+    
+  }
+
+  .header-text h1 {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+  }
+  .upp{
+    margin-top: 70px;
+    
+  }
+
+  .down {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    margin-top: 100px;
+    
+  }
+}

@@ -1,0 +1,141 @@
+/* Navbar container */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(to right, #1a0324, #3478db);
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar brand */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Toggler button */
+.navbar-toggler {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+  display: none; /* Hide toggler by default */
+}
+
+/* Toggler icon */
+.navbar-toggler-icon {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+}
+
+/* Navigation links container */
+.navbar-links {
+  list-style: none;
+  padding: 15px 0; /* Add padding to the top and bottom */
+  margin: 0;
+  background-color: rgba(26, 3, 36, 0.8); /* Adjust opacity here */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 100%; /* Start below the toggler button */
+  right: 0;
+  width: auto;
+  transform: translateY(-100%);
+  display: none; /* Hide initially */
+  flex-direction: column; /* Default to column layout */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: -1; /* Initially set z-index to -1 to hide behind other content */
+  opacity: 0; /* Initially hide */
+  pointer-events: none; /* Initially disable pointer events */
+}
+
+.navbar-links.active {
+  transform: translateY(0); /* Slide in when active */
+  opacity: 1; /* Show when active */
+  pointer-events: auto; /* Enable pointer events when active */
+  display: flex; /* Show links when active */
+}
+
+.navbar-links.row {
+  flex-direction: row; /* Change to row layout when toggler is active */
+}
+
+.navbar-links li {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  padding: 10px 15px; /* Add padding to the links */
+  display: block; /* Ensure links are block elements */
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-toggler {
+    display: inline-block; /* Show toggler on smaller screens */
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1001; /* Ensure toggler is above other content */
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 100%; /* Start below the toggler button */
+    right: 0;
+    width: auto;
+    background-color: rgba(26, 3, 36, 0.8); /* Adjust opacity here */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-100%);
+    display: flex; /* Ensure flex display */
+    flex-direction: column; /* Default to column layout */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  .navbar-links.active {
+    transform: translateY(0); /* Slide in when active */
+    opacity: 1; /* Show when active */
+    pointer-events: auto; /* Enable pointer events when active */
+  }
+
+  .navbar-links.row {
+    flex-direction: row; /* Change to row layout when toggler is active */
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar-links {
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    width: auto;
+    transform: translateY(0);
+    z-index: auto; /* Reset z-index for larger screens */
+    opacity: 1; /* Ensure visibility for larger screens */
+    pointer-events: auto; /* Ensure pointer events for larger screens */
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar-links li {
+    margin: 0 15px;
+  }
+}

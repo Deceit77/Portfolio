@@ -1,0 +1,31 @@
+.social-icons-container {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Adjust the gap between icons */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 5px;
+}
+
+.social-icons a:hover {
+  color: #ffd700; /* Change color on hover */
+}
+
+@media (max-width: 768px) {
+  .social-icons-container {
+    bottom: 5px; /* Adjust bottom spacing for smaller screens */
+  }
+}
