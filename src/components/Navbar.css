@@ -1,5 +1,6 @@
 /* Navbar container */
 .navbar {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
@@ -13,8 +14,18 @@
 
 /* Navbar brand */
 .navbar-brand {
+  display: flex;
+  align-items: center;
   font-size: 24px;
   font-weight: bold;
+}
+
+/* Navbar logo */
+.navbar-logo {
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  margin-right: 10px; /* Space between the logo and the text */
+  border-radius: 50%; /* Optional: make the logo circular */
 }
 
 /* Toggler button */
@@ -77,8 +88,6 @@
   padding: 10px 15px; /* Add padding to the links */
   display: block; /* Ensure links are block elements */
 }
-
-
 
 @media (max-width: 768px) {
   .navbar {
