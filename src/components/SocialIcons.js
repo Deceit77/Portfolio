@@ -6,6 +6,7 @@ import './SocialIcons.css';
 
 const SocialIcons = () => {
   return (
+    <div>
     <div className="social-icons">
       <a href="https://www.facebook.com/ishan.lamsal.9" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faFacebook} /><span></span>
@@ -25,7 +26,12 @@ const SocialIcons = () => {
       <a href="https://www.linkedin.com/in/ishan-lamsal-855a79169?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faLinkedin} /><span></span>
       </a>
-    </div>
+      </div>
+    <div className='nnn' >
+      <div > © 2024 Ishan Lamsal. All rights reserved.</div> 
+      </div>
+      </div>
+    
   );
 };
 
