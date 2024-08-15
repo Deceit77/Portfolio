@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projects.css';
 import mainpic from './braint.png';
-
+import bookpic from './Bookhub.png';
 function Projects() {
   return (
     <section id="projects" className="projects">
@@ -16,7 +16,10 @@ function Projects() {
         </div>
         <div className="project">
           <h3>Project 2</h3>
-          <p>Description of the project...</p>
+          <a href='https://github.com/Deceit77/BookHub'>
+            <img className="Projectim" src={bookpic} alt="Example" />
+          </a>
+          <p>"BOOKHUB" a E-commerce Website form where user can buy books fully developed using ASP.NET Core MVC</p>
         </div>
         {/* Add more projects as needed */}
       </div>

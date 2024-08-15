@@ -6,7 +6,7 @@ const Header = () => {
     const [displayText1, setDisplayText1] = useState('');
     const [toggle1, setToggle1] = useState(false);
     const [displayText2Index, setDisplayText2Index] = useState(0);
-    const texts = ['C','C++','C#','PYTHON','JS', 'Web Design','MERN STACK','Photography', 'Video Editing','अरु कुनै कुरा आउँदैन'];
+    const texts = ['C','C++','C#','PYTHON','JS', 'Web Design','MERN STACK','Photography', 'Video Editing','.NET MVC','अरु कुनै कुरा आउँदैन'];
 
     useEffect(() => {
         const text1 =  'स्वागतम्!';
