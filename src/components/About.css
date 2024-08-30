@@ -26,7 +26,10 @@ body {
     background-position: 0% 50%;
   }
 }
-
+.ins{
+  text-align: left;
+  margin-right: 100px;
+}
 .about {
   padding: 40px 15px;
   text-align: center;

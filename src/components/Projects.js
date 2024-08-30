@@ -17,7 +17,7 @@ function Projects() {
         <div className="project">
           <h3>Project 2</h3>
           <a href='https://github.com/Deceit77/BookHub'>
-            <img className="Projectim" src={bookpic} alt="Example" />
+            <img className="Projecti" src={bookpic} alt="Example" />
           </a>
           <p>"BOOKHUB" a E-commerce Website form where user can buy books fully developed using ASP.NET Core MVC</p>
         </div>
